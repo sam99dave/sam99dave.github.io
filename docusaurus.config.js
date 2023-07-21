@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'sd99',
   tagline: 'Figuring out AI one step at a time',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/new_logo.png',
 
   // Set the production url of your site here
   url: 'https://sam99dave.github.io',
@@ -69,7 +69,7 @@ const config = {
         title: 'sd99',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/new_logo.png',
         },
         items: [
           {
