@@ -4,6 +4,9 @@
 # Production
 /build
 
+# Ignore Folders
+/docs_default
+
 # Generated files
 .docusaurus
 .cache-loader
