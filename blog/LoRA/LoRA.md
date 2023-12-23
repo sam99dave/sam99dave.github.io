@@ -1,11 +1,7 @@
 ---
 slug: LoRA ~ Low-Rank Adaptation
 title: LoRA ~ Low-Rank Adaptation
-authors:
-  name: Samuel Davis
-  title: Docusaurus Core Team
-  url: https://github.com/wgao19
-  image_url: https://github.com/wgao19.png
+authors: sam99dave
 tags: [LoRA, Large Language Models]
 ---
 
