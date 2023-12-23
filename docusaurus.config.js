@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'sd99',
-  tagline: 'Figuring out AI one step at a time',
+  title: 'Samuel Davis',
+  tagline: 'Exploring ',
   favicon: 'img/new_logo.png',
 
   // Set the production url of your site here
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/sam99dave/sam99dave.github.io/tree/main/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/sam99dave/sam99dave.github.io/tree/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -68,8 +68,8 @@ const config = {
       navbar: {
         title: 'sd99',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/new_logo.png',
+          alt: 'Site Logo',
+          src: 'img/favico-aiml.png',
         },
         items: [
           {
@@ -98,23 +98,23 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
-              // {
-              //   label: 'Twitter',
-              //   href: 'https://twitter.com/docusaurus',
-              // },
-            ],
-          },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     // {
+          //     //   label: 'Stack Overflow',
+          //     //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     // },
+          //     // {
+          //     //   label: 'Discord',
+          //     //   href: 'https://discordapp.com/invite/docusaurus',
+          //     // },
+          //     // {
+          //     //   label: 'Twitter',
+          //     //   href: 'https://twitter.com/docusaurus',
+          //     // },
+          //   ],
+          // },
           {
             title: 'More',
             items: [
