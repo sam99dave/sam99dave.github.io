@@ -5,7 +5,19 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Resume",
-    link: "pdf/My-Resume.pdf",
+    // link: "pdf/My-Resume.pdf",
+    links: [
+      {
+        title: "Computer Vision",
+        link: "pdf/CV Samuel ML Resume.pdf",
+        Svg: require("@site/static/img/resume-icon-v3.svg").default,
+      },
+      {
+        title: "NLP / GenAI",
+        link: "pdf/NLP-LLM Samuel ML Resume.pdf",
+        Svg: require("@site/static/img/resume-icon-v3.svg").default,
+      }
+    ],
     Svg: require("@site/static/img/resume-icon-v3.svg").default,
     // description: (
     //   <>
@@ -46,30 +58,59 @@ const FeatureList = [
   // },
 ];
 
-function Feature({ Svg, title, description, link }) {
+// ORIGINAL 
+// function Feature({ Svg, title, description, link }) {
+//   return (
+//     <div className={clsx("col col--4")}>
+//       <div className="text--center">
+//         {link ? (
+//           <a
+//             href={link}
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className={styles.featureLink}
+//           >
+//             <Svg className={styles.featureSvg} role="img" />
+//           </a>
+//         ) : (
+//           <Svg className={styles.featureSvg} role="img" />
+//         )}
+//       </div>
+//       <div className="text--center padding-horiz--md">
+//         <h3>{title}</h3>
+//         <p>{description}</p>
+//       </div>
+//     </div>
+//   );
+// }
+
+function Feature({ Svg, title, links }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        {link ? (
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.featureLink}
-          >
-            <Svg className={styles.featureSvg} role="img" />
-          </a>
-        ) : (
-          <Svg className={styles.featureSvg} role="img" />
-        )}
-      </div>
-      <div className="text--center padding-horiz--md">
+        {/* Rendering Main Title SVG */}
+        {Svg && <Svg className={styles.featureSvg} role="img" />}
+        {/* Rendering Main Title */}
         <h3>{title}</h3>
-        <p>{description}</p>
+        {/* Rendering CV and NLP links if present */}
+        {links &&
+          links.map((link, index) => (
+            <div key={index}>
+              <a
+                href={link.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.featureLink}
+              >
+                {link.title}
+              </a>
+            </div>
+          ))}
       </div>
     </div>
   );
 }
+
 
 export default function HomepageFeatures() {
   return (
