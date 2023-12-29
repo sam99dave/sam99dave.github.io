@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_blog=self.webpackChunkmy_blog||[]).push([[697],{375:e=>{e.exports=JSON.parse('{"title":"Notes","slug":"/category/notes","permalink":"/docs/category/notes","navigation":{"previous":{"title":"Tutorial Intro","permalink":"/docs/intro"},"next":{"title":"Audio","permalink":"/docs/category/audio"}}}')}}]);
